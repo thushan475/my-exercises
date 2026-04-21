@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title 8</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../assets/lib/normalize.css">
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    /* GRID CONTAINER */
+    .layout-grid {
+      width: 100vw;
+      height: 100vh;
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    /* BASE BOX */
+    .box {
+      border: 1px solid black;
+    }
+
+    /* COLORS */
+    .pink { background: hotpink; }
+    .violet { background: blueviolet; }
+    .blue { background: blue; }
+    .orange { background: orangered; }
+    .light-pink { background: pink; }
+    .yellow { background: yellow; }
+    .purple { background: purple; }
+    .dark { background: darkslategrey; }
+
+    /* GRID POSITIONING */
+    .span-2-col {
+      grid-column: span 2;
+    }
+
+    .span-2-col-start-2 {
+      grid-column: 2 / 4;
+    }
+
+    .span-full-right {
+      grid-column: 4 / 5;
+      grid-row: 1 / 4;
+    }
+  </style>
+</head>
+
+<body>
+
+<section class="layout-grid">
+
+  <div class="box pink span-2-col"></div>
+  <div class="box violet"></div>
+  <div class="box blue span-full-right"></div>
+  <div class="box orange"></div>
+  <div class="box light-pink"></div>
+  <div class="box yellow"></div>
+  <div class="box purple"></div>
+  <div class="box dark span-2-col-start-2"></div>
+
+</section>
+
+</body>
+</html>
+
+
+case 06

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../assets/lib/normalize.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    /* MAIN WRAPPER */
+    .card-wrapper {
+      width: 100%;
+      height: 100vh;
+      background: black;
+      overflow-y: auto;
+    }
+
+    /* EACH CARD */
+    .card {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* STICKY HEADER */
+    .card-header {
+      height: 10vh;
+      position: sticky;
+      top: 0;
+
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 40px;
+      color: white;
+
+      border-bottom: 3px solid black;
+    }
+
+    /* CONTENT AREA */
+    .card-body {
+      height: 90vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 130px;
+      color: black;
+    }
+
+    /* COLORS (HEADER + BODY PAIRS) */
+    .card.red .card-header { background: #a60000; }
+    .card.red .card-body { background: #f13f3f; }
+
+    .card.blue .card-header { background: blue; }
+    .card.blue .card-body { background: dodgerblue; }
+
+    .card.gray .card-header { background: dimgray; }
+    .card.gray .card-body { background: lightslategray; }
+
+    .card.purple .card-header { background: purple; }
+    .card.purple .card-body { background: mediumpurple; }
+  </style>
+</head>
+
+<body>
+
+<main class="card-wrapper">
+
+  <section class="card red">
+    <div class="card-header">Card 1</div>
+    <div class="card-body">Hello</div>
+  </section>
+
+  <section class="card blue">
+    <div class="card-header">Card 2</div>
+    <div class="card-body">How</div>
+  </section>
+
+  <section class="card gray">
+    <div class="card-header">Card 3</div>
+    <div class="card-body">Are</div>
+  </section>
+
+  <section class="card purple">
+    <div class="card-header">Card 4</div>
+    <div class="card-body">You..?</div>
+  </section>
+
+</main>
+
+</body>
+</html>
+
+
+
+case 04

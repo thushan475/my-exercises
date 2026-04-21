@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title 7</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../assets/lib/normalize.css">
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    /* FULL SCROLL AREA */
+    .scroll-container {
+      position: relative;
+      height: 300vh;
+    }
+
+    /* CENTER RINGS */
+    .outer-ring,
+    .inner-ring {
+      position: fixed;
+      inset: 0;
+      margin: auto;
+      border-radius: 50%;
+      background: transparent;
+    }
+
+    .outer-ring {
+      width: 240px;
+      aspect-ratio: 1 / 1;
+      border: 20px solid dimgray;
+    }
+
+    .inner-ring {
+      width: 200px;
+      aspect-ratio: 1 / 1;
+      border: 20px solid red;
+    }
+
+    /* CIRCLE BASE */
+    .message-circle {
+      width: 200px;
+      aspect-ratio: 1 / 1;
+      position: absolute;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+      font-weight: bold;
+      font-size: 25px;
+
+      border-radius: 50%;
+      color: white;
+
+      left: calc(50% - 100px);
+    }
+
+    /* INDIVIDUAL POSITIONS */
+    .msg-hello {
+      background: darkmagenta;
+      top: calc(50vh - 100px);
+    }
+
+    .msg-welcome {
+      background: dodgerblue;
+      top: calc(150vh - 100px);
+    }
+
+    .msg-ijse {
+      background: orangered;
+      top: calc(250vh - 100px);
+    }
+  </style>
+</head>
+
+<body>
+
+<section class="scroll-container">
+
+  <div class="outer-ring"></div>
+  <div class="inner-ring"></div>
+
+  <div class="message-circle msg-hello">Hello</div>
+
+  <div class="message-circle msg-welcome">Welcome To</div>
+
+  <div class="message-circle msg-ijse">Institute Of Software Engineering</div>
+
+</section>
+
+</body>
+</html>
+
+
+
+
+Case 03
